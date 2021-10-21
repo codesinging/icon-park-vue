@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24 44C32.2843 44 39 37.2843 39 29C39 15 24 4 24 4C24 4 9 15 9 29C9 37.2843 15.7157 44 24 44Z" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 29C9 37.2843 15.7157 44 24 44C32.2843 44 39 37.2843 39 29C39 29 30 32 24 29C18 26 9 29 9 29Z" fill="none" :stroke="color" :stroke-width="strokeWidth" stroke-linejoin="round"/></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconWaterLevel",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

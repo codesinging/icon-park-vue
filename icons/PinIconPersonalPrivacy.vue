@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="11" r="7" fill="none" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 41C4 32.1634 12.0589 25 22 25" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><rect x="27" y="31" width="14" height="10" fill="none" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M37 31V28C37 26.3431 35.6569 25 34 25C32.3431 25 31 26.3431 31 28V31" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconPersonalPrivacy",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

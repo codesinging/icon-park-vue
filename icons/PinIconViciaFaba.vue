@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#icon-91ab694ecff8e02)"><path d="M3.99989 31C4.00014 24.5 8.0004 22.0373 11.0001 21.0186C13.9997 20 16.0003 20 18.9999 17C21.9995 14 22.0004 7.99999 28 5.99999C33.9995 3.99998 41.091 7.00002 42.9997 14C44.9084 21 39.5006 30 37.0006 33C34.5006 36 29.4987 41 20.9996 42C12.5006 43 3.99963 37.5 3.99989 31Z" fill="none" :stroke="color" :stroke-width="strokeWidth" stroke-linejoin="round"/><path d="M12 21.0435C19 30 29 21.0435 22 12" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.0005 21.0186C14.0002 20 16.0008 20 19.0004 17C22 14 22.0009 7.99998 28.0004 5.99998" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="icon-91ab694ecff8e02"><rect width="48" height="48" :fill="color"/></clipPath></defs></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconViciaFaba",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

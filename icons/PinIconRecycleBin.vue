@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><path d="M16 18L24 4.5L32 18" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 28.5L46 42H30" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.6913 41.6782L1.99994 41.8564L9.99994 28" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 29H30.8217" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round"/></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconRecycleBin",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

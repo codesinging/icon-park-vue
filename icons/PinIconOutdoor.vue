@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g><rect width="48" height="48" fill="white" fill-opacity="0.01" stroke-linejoin="round" :stroke-width="strokeWidth" stroke="none" fill-rule="evenodd"/><g transform="translate(4.000000, 4.000000)"><polygon points="-3.38652717e-14 38 14 6 24 30 28 18 40 38" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="nonzero"/><circle cx="33" cy="5" r="5" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="nonzero"/></g></g></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconOutdoor",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

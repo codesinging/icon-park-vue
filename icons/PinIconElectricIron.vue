@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><path d="M5 18.7125C5 18.319 5.319 18 5.7125 18H19.1519C32.3228 18 43 28.6772 43 41.8481V41.8481C43 41.932 42.932 42 42.8481 42H5V18.7125Z" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 18V8H25" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><circle cx="15" cy="27" r="4" fill="none" :stroke="color" :stroke-width="strokeWidth"/><path d="M5 36H42" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round"/><path d="M29 20C30.3333 18 34.4 13.6 38 16C41.5 18.3333 38.5 24 37 26" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconElectricIron",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

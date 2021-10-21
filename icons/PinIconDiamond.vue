@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g><rect width="48" height="48" fill="white" fill-opacity="0.01" stroke-linecap="round" stroke-linejoin="round" :stroke-width="strokeWidth" stroke="none" fill-rule="evenodd"/><g transform="translate(3.000000, 5.000000)"><polygon points="7.63636364 0 34.3636364 0 42 13.3 21 38 0 13.3" stroke-linecap="round" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="evenodd"/><polyline points="7.63636364 0 21 38 34.3636364 0" stroke-linecap="round" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="evenodd"/><path d="M0,13.3 L42,13.3" stroke-linecap="round" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="evenodd"/><polyline points="12.4090909 13.3 21 0 29.5909091 13.3" stroke-linecap="round" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="evenodd"/></g></g></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconDiamond",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

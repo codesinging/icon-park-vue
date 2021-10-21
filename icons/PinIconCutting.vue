@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g><rect width="48" height="48" fill="white" fill-opacity="0.01" stroke-linecap="round" stroke-linejoin="round" :stroke-width="strokeWidth" stroke="none" fill-rule="evenodd"/><g transform="translate(6.000000, 5.000000)"><g transform="translate(0.000000, 0.021632)"><polyline points="0 4.97836848 32 4.97836848 32 36.9783685" stroke-linecap="round" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="evenodd"/><path d="M20.4664367,-6 L20.4664367,39.0238636" transform="translate(20.466437, 16.511932) rotate(-135.000000) translate(-20.466437, -16.511932) " stroke-linecap="round" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="evenodd"/><polyline transform="translate(20.000000, 16.978368) scale(-1, -1) translate(-20.000000, -16.978368) " points="4 0.978368479 36 0.978368479 36 32.9783685" stroke-linecap="round" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="evenodd"/></g></g></g></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconCutting",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

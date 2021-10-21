@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#icon-1ca54ba772b6c05)"><path d="M23 5.99966H8C6.89543 5.99966 6 6.89509 6 7.99966V40C6 41.1046 6.89543 42 8 42H40C41.1046 42 42 41.1046 42 40V25" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 15.9998V23.9998" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round"/><path d="M42 5.99951V13.9995" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round"/><path d="M32 23.9998H24" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round"/><path d="M42 5.99966L24 23.9997" :stroke="color" :stroke-width="strokeWidth"/><path d="M42 5.99966H34" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round"/></g><defs><clipPath id="icon-1ca54ba772b6c05"><rect width="48" height="48" :fill="color"/></clipPath></defs></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconStretching",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

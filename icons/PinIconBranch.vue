@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g><rect width="48" height="48" fill="white" fill-opacity="0.01" stroke-linejoin="round" :stroke-width="strokeWidth" stroke="none" fill-rule="evenodd"/><g transform="translate(5.000000, 4.000000)"><circle fill="none" fill-rule="nonzero" cx="35" cy="20" r="4" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color"/><circle fill="none" fill-rule="nonzero" cx="4" cy="4" r="4" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color"/><circle fill="none" fill-rule="nonzero" cx="4" cy="36" r="4" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color"/><polyline stroke-linecap="round" points="4 8 4 32 4 20.0083363 31 20.0083363" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="evenodd"/></g></g></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconBranch",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

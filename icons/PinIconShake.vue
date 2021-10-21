@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g><rect width="48" height="48" fill="white" fill-opacity="0.01" stroke-linejoin="round" :stroke-width="strokeWidth" stroke="none" fill-rule="evenodd"/><g transform="translate(4.000000, 6.000000)"><polyline :stroke="color" stroke-linecap="round" points="0 4 4 8.66666667 0 13.3333333 4 18 0 22.6666667 4 27.3333333 0 32" stroke-linejoin="round" :stroke-width="strokeWidth" fill="none" fill-rule="evenodd"/><polyline :stroke="color" stroke-linecap="round" transform="translate(38.000000, 18.000000) scale(-1, 1) translate(-38.000000, -18.000000) " points="36 4 40 8.66666667 36 13.3333333 40 18 36 22.6666667 40 27.3333333 36 32" stroke-linejoin="round" :stroke-width="strokeWidth" fill="none" fill-rule="evenodd"/><rect :stroke="color" fill="none" fill-rule="nonzero" x="10" y="0" width="20" height="36" stroke-linejoin="round" :stroke-width="strokeWidth"/><path d="M18,29 L22,29" :stroke="color" stroke-linecap="round" stroke-linejoin="round" :stroke-width="strokeWidth" fill="none" fill-rule="evenodd"/></g></g></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconShake",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

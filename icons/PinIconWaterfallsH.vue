@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g><rect width="48" height="48" fill="white" fill-opacity="0.01" stroke-linejoin="round" :stroke-width="strokeWidth" stroke="none" fill-rule="evenodd"/><g transform="translate(6.000000, 6.000000)"><rect x="0" y="0" width="14" height="11" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="nonzero"/><rect x="22" y="25" width="14" height="11" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="nonzero"/><rect x="22" y="0" width="14" height="17" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="nonzero"/><rect x="0" y="19" width="14" height="17" stroke-linejoin="round" :stroke-width="strokeWidth" :stroke="color" fill="none" fill-rule="nonzero"/></g></g></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconWaterfallsH",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

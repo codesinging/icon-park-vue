@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g><rect width="48" height="48" fill="white" fill-opacity="0.01" stroke-linejoin="round" :stroke-width="strokeWidth" stroke="none" fill-rule="evenodd"/><g transform="translate(14.000000, 6.000000)"><path d="M4,19.9992676 L4,4 C4,0.686291501 6.6862915,-2 10,-2 C13.3137085,-2 16,0.686291501 16,4 L16,19.9992676 C18.4288934,21.8236803 20,24.7283643 20,28 C20,33.5228475 15.5228475,38 10,38 C4.4771525,38 0,33.5228475 0,28 C0,24.7283643 1.5711066,21.8236803 4,19.9992676 Z" :stroke="color" fill="none" fill-rule="nonzero" stroke-linejoin="round" :stroke-width="strokeWidth"/><path d="M10,11 L10,24" :stroke="color" stroke-linecap="round" stroke-linejoin="round" :stroke-width="strokeWidth" fill="none" fill-rule="evenodd"/><circle :stroke="color" fill="none" fill-rule="nonzero" cx="10" cy="28" r="4" stroke-linejoin="round" :stroke-width="strokeWidth"/></g></g></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconThermometer",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>

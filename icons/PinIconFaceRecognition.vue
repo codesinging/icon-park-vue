@@ -1,0 +1,23 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 15V6H15" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 33V42H15" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M42 33V42H33" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M33 6H42V15" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 38C30.6274 38 36 31.732 36 24C36 16.268 30.6274 10 24 10C17.3726 10 12 16.268 12 24C12 31.732 17.3726 38 24 38Z" :stroke="color" :stroke-width="strokeWidth"/><path d="M6 24H42" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round"/><path d="M20.0703 30.1057C21.3382 31.0429 22.6482 31.5116 24.0006 31.5116C25.3529 31.5116 26.699 31.0429 28.0387 30.1057" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round"/></svg>
+</template>
+
+<script>
+export default {
+    name: "PinIconFaceRecognition",
+    props: {
+        size: {
+            type: [Number, String],
+            default: '1rem'
+        },
+        color: {
+            type: String,
+            default: 'currentColor'
+        },
+        strokeWidth: {
+            type: [String, Number],
+            default: 4
+        },
+    },
+}
+</script>
